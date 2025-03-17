@@ -7,11 +7,59 @@
     <script src='index.js'></script>
 </head>
 <body>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At illum minus doloremque modi tempore? Accusantium mollitia impedit quae magnam, consectetur eius quo corporis nemo architecto cum autem aliquam pariatur officia.</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At illum minus doloremque modi tempore? Accusantium mollitia impedit quae magnam, consectetur eius quo corporis nemo architecto cum autem aliquam pariatur officia.</p>
-    <h3><script>document.write('Meu nome é ' + nome);</script></h3>
-    <h4><script>document.write(Date());</script></h4>
+    <h1>Quem Descobriu o Brasil ?</h1>
+    <div class="padrao" id="id" onclick="fa()">
+        Pedro Álvares Cabral
+    </div>
+    <div class="padrao" id="id1" onclick="fa1()">
+        Os povos originários
+    </div>
+    <div class="padrao" id="id2" onclick="fa2()">
+        Americo
+    </div>
+
+    <script>
+        var a = window.document.getElementById("id");
+        a.addEventListener('click',x);
+        function x(){
+            a.innerText='Clicou';
+            window.alert('Certa Resposta');
+        }
+    </script>
+
+    <!-- <script>
+        function fa(){
+            var a=document.getElementById("id");
+            a.innerText = 'Certa resposta!';
+            a.style.backgroundColor="green";
+        }
+        function fa1(){
+            var b=document.getElementById("id1");
+            b.innerText = 'Errada resposta!';
+            b.style.backgroundColor="red";
+        }
+        function fa2(){
+            var c=document.getElementById("id2");
+            c.innerText = 'Errada resposta!';
+            c.style.backgroundColor="red";
+        }
+    </script> -->
+
+    <!-- <p><i>PARAGRAFO 1, ipsum dolor sit amet consectetur adipisicing elit. At illum minus doloremque modi tempore? Accusantium mollitia impedit quae magnam, consectetur eius quo corporis nemo architecto cum autem aliquam pariatur officia.</i></p>
+    <p>PARAGRAFO 2, ipsum dolor sit amet consectetur adipisicing elit. At illum minus doloremque modi tempore? Accusantium mollitia impedit quae magnam, consectetur eius quo corporis nemo architecto cum autem aliquam pariatur officia.</p> -->
+    <!-- <script>
+        var p1 = document.getElementsByTagName('p')[1];
+        p1.style.background="blue";
+    </script> -->
+
+    <!-- <script>
+        var p1 = 
+        document.getElementsByTagName("p")[0]
+        p1.innerHTML="<i>blue</i>"
+    </script> -->
+    <!-- <h3><script>document.write('Meu nome é ' + nome);</script></h3>
+    <h4><script>document.write(Date());</script></h4> -->
     
-    <button onclick="window.print()">Print this page</button>
+    <!-- <button onclick="window.print()">Print this page</button> -->
 </body>
 </html>
