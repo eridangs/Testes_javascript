@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta caracteres</title>
+</head>
+<body>
+    <script>
+        let cpf = /^([0-9]{3}\.[0-9]{3}\.[0-9]{3}\-[0-9]{2})$/
+        document.write(cpf.test("957.877.555-55"))
+        // let dia = /^(0[1-9]|1[0-2]|2[0-9]|3[0-1])$/
+        // let mes = /^(0[1-9]|1[0-2])$/
+        // let ano = /^\d{4}$/
+        // let data = /^dia\/mes\/ano$/
+        // let data = /^(0[1-9]|1[0-2]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/\d{4}$/
+        // document.write(data.test("22/04/2120"))
+        // document.write(mes.test("12"))
+        // document.write(mes.test("13"))
+        // document.write(dia.test("32"))
+        // document.write(dia.test("30"))
+        // document.write(/^\d{2}\/\d{2}\/\d{4}$/.test("25/12/2025"))
+        // document.write(/[a-z]/i.test("ABZ")))
+        // document.write(/love/i.test("LovE"))
+        // document.write(/\x/i.test("123x"))
+        // document.write(/\sw/.test(" w"))
+    </script>
+    
+</body>
+</html>

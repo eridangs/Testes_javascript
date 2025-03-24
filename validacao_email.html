@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=script, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .span-required{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <script defer>
+        const inputs = document.querySelectorAll('.required')
+        const spans = document.querySelectorAll('.span-required')
+        const email = /^[a-zA-Z0-9.]+@[a-zA-Z0-9.]+\.[a-zA-Z]{2,}$/
+        function emailValidate(){
+            if(email.test(inputs[0].value)){
+                removeError(0)
+            }else{
+                setError(0)
+            }
+        }
+
+        function setError(index){
+            spans[index].style.display = 'block';
+            spans[index].style.color = 'red';
+        }
+
+        function removeError(index){
+            spans[index].style.display = 'none';
+        }
+    </script>
+    <div>
+        <input type="text" placeholder="Digite seu email" class="input-required" oninput="emailValidate()">
+        <span class="span-required">O email deve ter o padrão email@empresa.com.br</span>
+    </div>
+</body>
+</html>
